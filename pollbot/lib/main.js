@@ -10,12 +10,12 @@ pageMod.PageMod({
 });
 
 var button = buttons.ActionButton({
-  id: "mozilla-link",
-  label: "Visit Mozilla",
+  id: "Spawner",
+  label: "Spawns Pollbot URL",
   icon: {
-    "16": "./icon-16.png",
-    "32": "./icon-32.png",
-    "64": "./icon-64.png"
+    "16": "./data/gir-16.png",
+    "32": "./data/gir-32.png",
+    "64": "./data/gir-64.png"
   },
   onClick: handleClick
 });
