@@ -28,17 +28,20 @@ function submitMultipleChoice() {
 function submitText() {
 }
 
-if(detectMainPage()){
-    console.log("Found main page");
+function detectAndSubmit(){
+    if(detectMainPage()){
+        console.log("Found main page");
+    }
+
+    if (detectMultipleChoice()){
+        console.log("Found multiple choice");
+        submitMultipleChoice();
+    }
+
+    if (detectTextArea()) {
+        console.log("Found text area");
+        submitText();
+    }
 }
 
-if (detectMultipleChoice()){
-    console.log("Found multiple choice");
-    submitMultipleChoice();
-}
-
-if (detectTextArea()) {
-    console.log("Found text area");
-    submitText();
-}
 
