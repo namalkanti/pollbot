@@ -26,7 +26,7 @@ function submitMultipleChoice() {
 }
 
 function submitText() {
-}
+
 
 function detectAndSubmit(){
     if(detectMainPage()){
@@ -43,5 +43,7 @@ function detectAndSubmit(){
         submitText();
     }
 }
+
+$("body")[0].change(detectAndSubmit);
 
 
